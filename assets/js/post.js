@@ -10,4 +10,5 @@ function post() {
     message: input.value
   }));
   input.value = '';
+  return false;
 }
