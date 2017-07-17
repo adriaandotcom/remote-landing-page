@@ -7,7 +7,7 @@ function post() {
   request.open('POST', url, true);
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({
-    message: input.value
+    message: 'New remote worker signup from: ' + input.value
   }));
   input.value = '';
   return false;
